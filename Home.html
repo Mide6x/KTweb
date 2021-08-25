@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
+  <link rel="icon" href="ar2.JPG">
+  <title>Sign-up</title>
+
+</head>
+
+<body>
+  <div class="bg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a href="index.html" class="active">LOGIN/SIGN UP PAGE</a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="index.html">Homepage</a>
+        <a href="contact.html">Contact</a>
+        <a href="Home.html">Login / Sign up</a>
+        <a href="bak.html">Become a Kortie</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <br>
+    <div>
+      <div class="panel shadow1">
+        <form class="login-form" method="POST" data-netlify="true">
+          <div class="panel-switch animated fadeIn">
+            <button type="button" id="sign_up" class="active-button">Sign Up</button>
+            <button type="button" id="log_in" class="">Log in</button>
+          </div>
+          <h1 class="animated fadeInUp animate1" id="title-login">Welcome Back !</h1>
+          <h1 class="animated fadeInUp animate1 hidden" id="title-signup">Welcome !</h1>
+          <fieldset id="login-fieldset">
+            <input class="login animated fadeInUp animate2" name="username" type="textbox" required
+              placeholder="Username" value="">
+            <input class="login animated fadeInUp animate3" name="password" type="password" required
+              placeholder="Password" value="">
+          </fieldset>
+          <fieldset id="signup-fieldset" class="hidden">
+            <input class="login animated fadeInUp animate2" name="username" type="textbox" required
+              placeholder="Username" value="">
+            <input class="login animated fadeInUp animate3" name="password" type="password"
+              placeholder="Choose password" required value="">
+          </fieldset>
+          <input type="submit" id="login-form-submit" class="login_form button animated fadeInUp animate4"
+            value="Log in">
+          <input type="submit" id="signup-form-submit" class="login_form button animated fadeInUp animate4 hidden"
+            value="Sign up">
+          <p><a id="lost-password-link" href="" class="animated fadeIn animate5" style="color: white;">Forgot your login or password?</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+
+        //--------- change color value of the form text/password inputs -----
+
+        const textInputs = $("input[type='textbox']");
+        const passwordsInputs = $("input[type='password']");
+        //--------- Login screen swicth -----
+
+        $("#sign_up").click(function () { // when click Sign Up button, hide the Log In elements, and display the Sign Up elements
+          $("#title-login").toggleClass("hidden", true);
+          $("#login-fieldset").toggleClass("hidden", true);
+          $("#login-form-submit").toggleClass("hidden", true);
+          $("#lost-password-link").toggleClass("hidden", true);
+          $("#sign_up").toggleClass("active-button", false);
+          $("#log_in").removeAttr("disabled");
+
+          $("#title-signup").toggleClass("hidden", false);
+          $("#signup-fieldset").toggleClass("hidden", false);
+          $("#signup-form-submit").toggleClass("hidden", false);
+          $("#log_in").toggleClass("active-button", true);
+          $("#sign_up").prop('disabled', true);
+        });
+
+        $("#log_in").click(function () { // when click Log In button, hide the Sign Up elements, and display the Log In elements
+          $("#title-login").toggleClass("hidden", false);
+          $("#login-fieldset").toggleClass("hidden", false);
+          $("#login-form-submit").toggleClass("hidden", false);
+          $("#lost-password-link").toggleClass("hidden", false);
+          $("#sign_up").toggleClass("active-button", true);
+          $("#log_in").prop('disabled', true);
+
+          $("#title-signup").toggleClass("hidden", true);
+          $("#signup-fieldset").toggleClass("hidden", true);
+          $("#signup-form-submit").toggleClass("hidden", true);
+          $("#log_in").toggleClass("active-button", false);
+          $("#sign_up").removeAttr("disabled");
+
+        });
+      });
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+</body>
+
+</html>

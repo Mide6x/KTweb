@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <link rel="icon" href="ar2.JPG">
+  <title>Kortiess</title>
+  <link rel="stylesheet" type="text/css" async />
+
+
+  <style>
+    body {
+      background-color: #808080f5
+    }
+  </style>
+</head>
+
+<body onload="checkCookie()">
+  <div class="jk">
+    <div class="bg">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <!-- Top Navigation Menu -->
+      <div>
+        <header class="header">
+          <nav class="navbar">
+            <a href="index.html" class="nav-logo">Kortiess.</a>
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a href="Home.html" class="nav-link">Login / Sign up</a>
+              </li>
+              <li class="nav-item">
+                <a href="bak.html" class="nav-link">Become a Kortie</a>
+              </li>
+              <li class="nav-item">
+                <a href="aboutkorty.html" class="nav-link">About Korty</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+            </ul>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
+        </header>
+      </div>
+      <br>
+
+      <div class="center">
+        <div class="w3-content" class="clearfix center">
+          <a href="https://www.youtube.com/watch?v=E3LCLQvVbYY"><img class="rounded center" src="E3LCLQvVbYYhd.jpg"
+              style="width:90%"></a>
+
+          <a href="https://www.youtube.com/watch?v=uHMD6Af-vmU"><img class="rounded center" src="uHMD6Af-vmUhd.jpg"
+              style="width:90%"></a>
+
+          <a href="https://www.youtube.com/watch?v=lznVESuarb0"><img class="rounded center" src="lznVESuarb0hd.jpg"
+              style="width:90%"></a>
+
+          <a href="https://www.youtube.com/watch?v=cZB7LPNKlk0"><img class="rounded center" src="cZB7LPNKlk0hd.jpg"
+              style="width:90%"></a>
+
+          <br>
+        </div>
+      </div>
+
+      <script>
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("rounded");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > x.length) {
+            slideIndex = 1
+          }
+          x[slideIndex - 1].style.display = "block";
+          setTimeout(carousel, 2000);
+        }
+        /*navbar*/
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+          hamburger.classList.toggle("active");
+          navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+        }
+      </script>
+
+    </div>
+    <div class="kk">
+
+
+
+
+
+      <div class="container center">
+        <a href="https://instagram.com/kortiess">
+          <img src="insta.JPEG" alt="Avatar" class="image center" style="width: 70%;">
+          <div class="overlay center" style="width: 70%;">
+            <div class="text">Click here to visit our Instagram Page</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="kb">
+    <div class="center" class="responsive">
+      <div class="row  center" class="hg">
+        <div class="column hg">
+          <img src="9D009B61-1DBA-4AB4-9C16-6E4C25F0E060.JPG" alt="korty" style="width:100%">
+        </div>
+        <div class="column hg">
+          <img src="5F1D67B4-8DA6-4A28-8FE9-FE6FAA65EF6A.JPG" alt="kort" style="width:100%">
+        </div>
+        <div class="column hg">
+          <img src="74D10448-B7DB-4888-8D76-6B5F08F63D70.JPG" alt="kort" style="width:100%">
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="https://instagram.com/korty_eo">
+    <div class="kb center">
+      <div class="center" class="responsive">
+        <div class="row">
+          <div class="column hg center">
+            <img src="ar1.JPG" alt="Korty1" style="width:100%">
+          </div>
+          <div class="column hg">
+            <img src="ar2.JPG" alt="Korty2" style="width:100%">
+          </div>
+          <div class="column hg">
+            <img src="ar4.JPG" alt="Korty4" style="width:100%">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </a>
+
+  <div id="list-builder"></div>
+  <div id="popup-box">
+    <img src="close.png" id="popup-close" />
+    <div id="popup-box-content">
+
+      <p>
+        Stay up to date on the latest on Instagram, plus receive exclusive content by
+        subscribing to Korty's Channel.
+      </p>
+      <p> <a href="https://instgram.com/kortiess"><button class="button button2">INSTAGRAM</button></p></a>
+      <p> <a href="https://www.youtube.com/channel/UCTFFhYhkLkxjhcCdwUKmQ5g"><button
+            class="button button2">YOUTUBE</button></p></a>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function () {
+
+      var delay = 300; // milliseconds
+      var cookie_expire = 0; // days
+
+      var cookie = localStorage.getItem("#list-builder");
+      if (cookie == undefined || cookie == null) {
+        cookie = 0;
+      }
+
+      if (((new Date()).getTime() - cookie) / (2000 * 60 * 60 * 24) > cookie_expire) {
+        $("#list-builder").delay(delay).fadeIn("fast", () => {
+          $("#popup-box").fadeIn("fast", () => { });
+        });
+
+        $("button[name=subscribe]").click(() => {
+          $.ajax({
+            type: "POST",
+            url: $("#popup-form").attr("action"),
+            data: $("#popup-form").serialize(),
+            success: (data) => {
+              $("#popup-box-content").html("<p style='text-align: center'>Thank you for subscribing to The Polyglot Developer newsletter!</p>");
+            }
+          });
+        });
+
+        $("#popup-close").click(() => {
+          $("#list-builder, #popup-box").hide();
+          localStorage.setItem("list-builder", (new Date()).getTime());
+        });
+      }
+
+    });</script>
+  <script>
+    // --- Config --- //
+    var purecookieTitle = "Cookies."; // Title
+    var purecookieDesc = "By using this website, you automatically accept that we use cookies."; // Description
+    var purecookieLink = '<a href="Privacypolicy.html" target="_blank">What for?</a>'; // Cookiepolicy link
+    var purecookieButton = "Understood"; // Button text
+    // ---        --- //
+
+
+    function pureFadeIn(elem, display) {
+      var el = document.getElementById(elem);
+      el.style.opacity = 0;
+      el.style.display = display || "block";
+
+      (function fade() {
+        var val = parseFloat(el.style.opacity);
+        if (!((val += .02) > 1)) {
+          el.style.opacity = val;
+          requestAnimationFrame(fade);
+        }
+      })();
+    };
+    function pureFadeOut(elem) {
+      var el = document.getElementById(elem);
+      el.style.opacity = 1;
+
+      (function fade() {
+        if ((el.style.opacity -= .02) < 0) {
+          el.style.display = "none";
+        } else {
+          requestAnimationFrame(fade);
+        }
+      })();
+    };
+
+    function setCookie(name, value, days) {
+      var expires = "";
+      if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+      }
+      document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    }
+    function getCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+      }
+      return null;
+    }
+    function eraseCookie(name) {
+      document.cookie = name + '=; Max-Age=-99999999;';
+    }
+
+    function cookieConsent() {
+      if (!getCookie('purecookieDismiss')) {
+        document.body.innerHTML += '<div class="cookieConsentContainer" id="cookieConsentContainer"><div class="cookieTitle"><a>' + purecookieTitle + '</a></div><div class="cookieDesc"><p>' + purecookieDesc + ' ' + purecookieLink + '</p></div><div class="cookieButton"><a onClick="purecookieDismiss();">' + purecookieButton + '</a></div></div>';
+        pureFadeIn("cookieConsentContainer");
+      }
+    }
+
+    function purecookieDismiss() {
+      setCookie('purecookieDismiss', '1', 7);
+      pureFadeOut("cookieConsentContainer");
+    }
+
+    window.onload = function () { cookieConsent(); };
+  </script>
+
+  <div class="footer">
+
+    <p id="footer">
+      <a href="bak.html" id="footer">Become A Kortie</a>
+      <a href="" id="footer"> | </a>
+      <a href="https://instagram.com/korty_eo" id="footer">Korty EO's Instagram</a>
+      <a href="" id="footer"> | </a>
+      <a href="https://instagram.com/kortiess" id="footer">Kortiess Official Instagram Page</a>
+      <a href="" id="footer"> | </a>
+      <a href="https://web.facebook.com/kortyeo" id="footer">Kortiess Official Facebook Page</a>
+    </p>
+
+
+    <p>&#169; Kortiess 2021</p>
+  </div>
+  </div>
+  </div>
+
+</html>

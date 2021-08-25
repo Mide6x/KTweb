@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="bakk">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bak.css">
+  <link rel="icon" href="ar2.JPG">
+  <title>Becoming a Kortie</title>
+
+</head>
+
+<body>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Top Navigation Menu -->
+  <div>
+    <header class="header">
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">Become a Kortie.</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="Home.html" class="nav-link">Login / Sign up</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="aboutkorty.html" class="nav-link">About Korty</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+  </div>
+  <br>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+          hamburger.classList.toggle("active");
+          navMenu.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+        }
+
+  </script>
+  <div class="bakk">
+  <div class="bgimg">
+    <div class="topleft">
+      <p></p>
+    </div>
+    <br>
+    <div class="xd">
+      <h2 style="text-align: center;">NEW FAN GUIDE</h2>
+    </div>
+    <div class="column">
+
+      <div class="container">
+
+        <div>
+          <p> &nbsp;&nbsp;&nbsp;&nbsp;If your're a new fan of korty EO, there can be a lot to catch up on. Fans of Korty
+            EO already understand how these fandoms operate,but if you aren't a &nbsp;fan of watching YouTube you may
+            not fully understand. (Who doesn't watch YouTube anyway?)
+            you may not be sure where to start.
+            Below is a simple &nbsp;guide aimed at new fans. I've done my best to provide useful information and got
+            some from other kortiess, but please let me know if you'd like to see &nbsp;something added here.
+          </p>
+          <p>Well, i'll continue this when I have enough content. Yeah, have a great time...</p>
+            <br>
+            <div>
+              Want to be a part of us? get the latest updates. <a href="Home.html">Sign-up</a> or <a href="kortyledons.html"> Login</a> here
+            </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+<br>
+
+      <div class="footer">
+
+        <p id="footer">
+          <a href="bak.html" id="footer">Become A Kortie</a>
+          <a href="" id="footer"> | </a>
+          <a href="https://instagram.com/korty_eo" id="footer">Korty EO's Instagram</a>
+          <a href="" id="footer"> | </a>
+          <a href="https://instagram.com/kortiess" id="footer">Kortiess Official Instagram Page</a>
+          <a href="" id="footer"> | </a>
+          <a href="https://web.facebook.com/kortyeo" id="footer">Kortiess Official Facebook Page</a>
+        </p>
+
+
+        <p id="footer">&#169; Kortiess 2021</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+</body>
+
+</html>
